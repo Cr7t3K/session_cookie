@@ -1,4 +1,23 @@
-<?php require 'inc/head.php'; ?>
+<?php
+require 'inc/head.php';
+
+
+
+if (!empty($_POST['loginname']))
+{
+    $userName = $_POST['loginname'];
+    $_SESSION['username'] = $userName;
+    header("Location: index.php" );
+}
+if (!empty($_SESSION['username'])){
+    header("Location: index.php" );
+    exit();
+}
+
+?>
+
+
+
 <div class="container" style="margin-top:40px">
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">

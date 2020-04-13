@@ -19,6 +19,10 @@ strong {
     margin: 2% auto;
 }
 
+ul li{
+    margin: 0 10px;
+}
+
 .navbar-right{
   padding-right: 1%;
 }
